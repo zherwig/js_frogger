@@ -32,7 +32,7 @@ let keys = []; //keyboard keys
 let score = 0;
 let collisionCount = 0;
 let frame = 0;
-let gamespeed = 1;
+let gameSpeed = 1;
 
 const particlesArray = []; //all dust particles
 const maxParticles = 300;

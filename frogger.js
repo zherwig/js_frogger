@@ -12,12 +12,42 @@ class Frogger {
     }
     
     update(){
-        console.log("Update")
+        if(keys[38]){ //up
+            if (this.moving === false){
+                this.y -= grid; //move
+                this.moving = true; //set moving to true to block further movement until keyup
+            }
+        }
+        if(keys[40]){ //down
+            if (this.moving === false && this.y < canvas.height - this.height * 2){
+                    this.y += grid; //move
+                    this.moving = true; 
+            }
+        }
+        if(keys[37]){ //right
+            if (this.moving === false && this.x > this.width){
+                this.x -= grid; //move
+                this.moving = true; 
+            }
+        }
+        if(keys[39]){ //left
+            if (this.moving === false && this.x < canvas.width - this.width * 2){
+                this.x += grid; //move
+                this.moving = true; 
+            }
+        }
+        if (this.y < 0){
+            scored()
+        }
     }
 
     draw(){
         ctx3.fillStyle = "green";
         ctx3.fillRect(this.x, this.y, this.width, this.height)
+    }
+
+    jump(){
+        console.log('jump')
     }
 }
 
