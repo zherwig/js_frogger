@@ -66,4 +66,15 @@ function handleObstacles(){
         logsArray[i].update()
         logsArray[i].draw()
     }
+
+    for (let i = 0; i < carsArray.length; i++){
+        if (collision(frogger, carsArray[i])){
+            //cutting image out of sprite sheet. 
+            //              (image, x start on spritesheet, y start on spritesheet, width on spritesheet, heighton spritesheet
+            //                 X on screen, Y on screen, width, height)
+            ctx4.drawImage(collisions, 0, 100, 100, 100, frogger.x, frogger.y, 50, 50)
+            resetGame()
+        }
+    }
+
 }

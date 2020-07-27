@@ -46,3 +46,6 @@ background_lvl2.src = "./img/background_lvl2.png"
 
 const grass = new Image()
 grass.src = "./img/grass.png"
+
+const collisions = new Image()
+collisions.src = "./img/collisions.png"
