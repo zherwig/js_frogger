@@ -20,6 +20,11 @@ const ctx4 = canvas4.getContext('2d');
 canvas4.width = 600;
 canvas4.height = 600;
 
+//idea's
+// Crown on frog at 20 points
+// let after turtles
+// frog shadow
+
 
 const canvas5 = document.getElementById('canvas5');
 const ctx5 = canvas5.getContext('2d');
@@ -60,3 +65,6 @@ log.src = "./img/log.png"
 const car = new Image()
 car.src = "./img/cars.png"
 let numberOfCars = 3 
+
+const froggerSprite = new Image()
+froggerSprite.src = "./img/frog_spritesheet.png"

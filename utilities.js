@@ -67,5 +67,6 @@ window.addEventListener("keydown", function(e){
 
 window.addEventListener("keyup", function(e){
     delete keys[e.keyCode]; //delete current key being unpressed
-    frogger.moving = false; //clear the block on the frog movingS
+    frogger.moving = false; //clear the block on the frog moving
+    frogger.frameX = 0;
 })
