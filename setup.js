@@ -33,6 +33,7 @@ let score = 0;
 let collisionCount = 0;
 let frame = 0;
 let gameSpeed = 1;
+let safe = false
 
 const particlesArray = []; //all dust particles
 const maxParticles = 300;
@@ -49,3 +50,13 @@ grass.src = "./img/grass.png"
 
 const collisions = new Image()
 collisions.src = "./img/collisions.png"
+
+const turtle = new Image()
+turtle.src = "./img/turtles.png"
+
+const log = new Image()
+log.src = "./img/log.png"
+
+const car = new Image()
+car.src = "./img/cars.png"
+let numberOfCars = 3 

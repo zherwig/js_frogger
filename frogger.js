@@ -16,6 +16,7 @@ class Frogger {
             if (this.moving === false){
                 this.y -= grid; //move
                 this.moving = true; //set moving to true to block further movement until keyup
+
             }
         }
         if(keys[40]){ //down

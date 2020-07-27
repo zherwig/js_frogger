@@ -32,6 +32,7 @@ function resetGame(){
     frogger.y = canvas.height - frogger.height - 40;
     score = 0;
     collisionCount++;
+    gameSpeed = 1;
 }
 
 
@@ -49,6 +50,7 @@ function animate(){
     handleObstacles()
     handleScoreBoard()
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height) //by drawing this after the frog, it will overlay the frog
+    frame++ //adding one to frame
     requestAnimationFrame(animate)
 }
 
